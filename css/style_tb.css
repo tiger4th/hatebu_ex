@@ -1,0 +1,14 @@
+/* Top Bar Style */
+.top-bar{
+	line-height: 72px;
+	height: 72px;
+}
+
+/* Navigation Buttons */
+#nav-button a{
+	height: 72px;
+}
+
+div#paper{
+	margin:6.5em auto 3em auto;
+}

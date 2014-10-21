@@ -1,0 +1,192 @@
+@charset 'UTF-8';
+/* 縦書き変換スクリプト h2v.js ver 1.3.4用スタイルシート h2v.css   
+    last updated : Aug 01 , 2011 
+    (c)tyz@freefielder.jp  http://freefielder.jp/tate/h2v/
+*/
+
+.h2v{
+	position:relative;
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','Hiragino Kaku Gothic Pro W3' , 'メイリオ' , 'Meiryo' , 'ＭＳ ゴシック','MS Gothic' ,'TakaoGothic' , 'Takaoゴシック' , monospace;
+}
+.h2v a{
+	text-decoration:none !important;
+}
+
+.h2v .h2v_e{
+	float:right;
+	position : relative;
+	width:1em;
+	line-height:1em;
+	word-wrap:break-word;
+	direction:ltr;
+}
+
+/* ブロック要素たち */
+.h2v ul , 
+.h2v ol ,
+.h2v dl ,
+.h2v p ,
+.h2v blockquote ,
+.h2v h1, .h2v h2 , .h2v h3 , .h2v h4 , .h2v h5 , 
+.h2v div,
+.h2v li,
+.h2v dd,
+.h2v dt{
+	float:right;
+	line-height:1em;
+}
+
+.h2v ul , .h2v ol , .h2v dl{
+	list-style: none;
+}
+
+.h2v ul ul ,
+.h2v ul ol ,
+.h2v ul dl ,
+.h2v ol ul ,
+.h2v ol ol ,
+.h2v ol dl ,
+.h2v dl ul ,
+.h2v dl ol ,
+.h2v dl dl{
+	margin-left:0;
+	margin-right:0;
+}
+
+
+/* インライン要素たち */
+.h2v_e span, 
+.h2v_e font , .h2v_e strong , .h2v_e big, .h2v_e small , .h2v_e i , .h2v_e b , .h2v_e em, .h2v_e sub, .h2v_e sup , .h2v_e a{
+	display:block !Important;
+	position:relative ;
+	left:50% ;
+	width:1em ;
+	line-height:1em ;
+	margin-left:-0.5em !Important;
+} 
+
+.h2v_e a{
+	border:none !important;
+}
+.h2v_e a:hover{
+	border-right: 1px solid darkblue !important;
+}
+
+
+.h2v center{
+	text-align: left;
+}
+
+.h2v_e sub{
+	margin-left:-1em !Important;
+}
+
+.h2v_e sup{
+	margin-left:0 !Important;
+}
+
+.h2v img{
+	display:block;
+	position:relative;
+}
+
+.h2v pre , .h2v table, .h2v textarea, .h2v iframe{
+	position:relative;
+	float: right;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+} 
+
+.h2v_e span.h2v_mark{
+	position:absolute;
+	top: -1em;
+	font-weight: bold;
+}
+
+/* 縦書き字形 */
+
+.h2v span.h2v_kuto{
+	position:static;
+	width:0.4em;
+	margin-top:-0.5em;
+	padding-bottom:0.5em;
+	margin-left:0.6em !Important;
+}
+.h2v span.h2v_cho{
+	width: 1em !important;
+	height:1em !important;
+	-moz-transform:matrix(0, 1, 1, 0, 0, 0);
+	-webkit-transform:matrix(0, 1, 1, 0, 0, 0);
+	-o-transform:matrix(0, 1, 1, 0, 0, 0);
+	-ms-transform:matrix(0, 1, 1, 0, 0, 0);
+}
+.h2v span.h2v_komoji{
+	position:static;
+	line-height:0.7em !Important;
+	margin-bottom:0.3em;
+	margin-left:0.11em !Important;
+}
+
+.h2v span.h2v_kakko{
+	display:block;
+	-moz-transform:rotate( 90deg );
+	-webkit-transform:rotate( 90deg );
+	-o-transform:rotate(90deg);
+	-ms-transform:translate(-0.05em) rotate(90deg);
+	transform:rotate( 90deg );
+}
+
+.h2v span.h2v_alpha , .h2v span.h2v_sp{
+	white-space:nowrap; 
+	word-wrap:normal; 
+	margin-top:0em;
+	-moz-transform-origin: left bottom;
+	-moz-transform:translate(0em,-1em) rotate(90deg);
+	-webkit-transform-origin: left bottom;
+	-webkit-transform:translate(0em,-1em) rotate( 90deg );
+	-o-transform-origin: left bottom;
+	-o-transform: translate(0em,-1em) rotate( 90deg );
+	-ms-transform-origin: left bottom;
+	-ms-transform:translate(-0.05em,-1em) rotate( 90deg );
+}
+
+.h2v_separator{
+	clear:both;
+	height:15px;
+	margin-bottom:15px;
+	border-bottom: dotted 1px #ccc;
+}
+
+.h2v_page{
+	clear: both;
+	position:relative;
+	margin-top:0.5em;
+}
+
+.clearfix{
+	clear:both;
+	width:1px;
+	height:1px;
+	visibility:hidden;
+}
+
+#h2v_splash{
+	background-color: #eee;
+}
+
+.h2v_bar{
+	position:relative;
+	margin-bottom:3px;
+	height:1.2em;
+	width: 100%;
+	line-height:1em;
+	font-size:12px;
+	text-align:right;
+	color: #999;
+	background-color:#eee;
+	clear:both;
+}
+.h2v_bar a{
+	color: #999;
+	text-decoration:underline !important;
+}

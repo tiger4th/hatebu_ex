@@ -1,0 +1,263 @@
+/* CSS reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+body{
+	font-family:'ÉqÉâÉMÉmäpÉS Pro W3','Hiragino Kaku Gothic Pro','ÉÅÉCÉäÉI',Meiryo,'ÇlÇr ÇoÉSÉVÉbÉN',sans-serif;
+	font-size: 14px;
+}
+img { 
+	border:0;
+}
+input{
+	border:1px solid #b0b0b0;
+	color:#979797;
+}
+h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+
+h2 {
+border-style: solid;
+border-width: 1px;
+border-color: #000000;
+color:#000000;
+font-weight:bold;
+font-size: large;
+color: #ffffff;
+background-color: #000000;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+/* Top Bar Style */
+.top-bar{
+	line-height: 24px;
+	font-size: 11px;
+	background: rgba(255, 255, 255, 1);
+	z-index: 9999;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 24px;
+	box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
+	-webkit-animation: slideOut 0.5s ease-in-out 0.3s backwards;
+	-moz-animation: slideOut 0.5s ease-in-out 0.3s backwards;
+	-o-animation: slideOut 0.5s ease-in-out 0.3s backwards;
+	-ms-animation: slideOut 0.5s ease-in-out 0.3s backwards;
+	animation: slideOut 0.5s ease-in-out 0.3s backwards;
+}
+.top-bar a{
+	padding: 0px 10px;
+	display: block;
+	float: left;
+}
+.top-bar a:hover{
+	background: #fff;
+}
+.top-bar span.right{
+	float: right;
+}
+.top-bar span.right a{
+	float: left;
+	display: block;
+}
+
+/* Bottom Bar Style */
+.bottom-bar{
+	padding: 1px 0 1px 0;
+	background: rgba(255, 255, 255, 1);
+	z-index: 9999;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	height: 24px;
+	box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
+}
+.bottom-bar a{
+	padding: 0 10px;
+	float: left;
+}
+
+/* Navigation Buttons */
+#nav-button{
+    position: fixed;
+	z-index: 2000;
+}
+#nav-button a{
+	display: inline-block;
+	font-size: 12px;
+	height: 24px;
+	background: rgba(255,255,255,0.9);
+	text-align: center;
+	border-right:solid 1px #eeeeee;
+}
+#nav-button a:hover{
+	background: #dddddd;
+}
+#nav-button a.current,
+#nav-button a.current:hover{
+	background: #000000;
+	color: #ffffff;
+	cursor: default;
+}
+@-webkit-keyframes slideOut{
+	0%{top:-30px; opacity: 0;}
+	100%{top:0px; opacity: 1;}
+}
+@-moz-keyframes slideOut{
+	0%{top:-30px; opacity: 0;}
+	100%{top:0px; opacity: 1;}
+}
+@-o-keyframes slideOut{
+	0%{top:-30px; opacity: 0;}
+	100%{top:0px; opacity: 1;}
+}
+@-ms-keyframes slideOut{
+	0%{top:-30px; opacity: 0;}
+	100%{top:0px; opacity: 1;}
+}
+@keyframes slideOut{
+	0%{top:-30px; opacity: 0;}
+	100%{top:0px; opacity: 1;}
+}
+
+div#paper{
+background-color:#eeeeee;
+width:800px;
+margin:3em auto 3em auto;
+}
+
+div#container{
+width:800px;
+margin-top:1em;
+}
+
+div#header{
+margin:1em 1em 0 1em;
+}
+
+div#footer{
+margin:0 1em 0 1em;
+border-bottom:solid 1px #888;
+float:bottom;
+border:solid 1px #888;
+}
+
+div#box{
+	padding-bottom:1em;
+}
+
+div#left{
+float:right;
+width:570px;
+margin:1em 0 0 0;
+border-right:solid 1px #888;
+border-left:solid 1px #eee;
+}
+
+div#right{
+float:right;
+width:170px;
+margin:1em 1.5em 0 0.5em;
+text-align: center;
+}
+
+div#center{
+float:right;
+width:740px;
+margin:1em 2em 0 0;
+}
+
+.hidden {
+color: #eee;
+font-size:xx-small;
+}
+
+a:link {
+text-decoration: none;
+color: #000000;
+}
+a:visited {
+text-decoration: none;
+color: #000000;
+}
+
+.xx-large {font-size: xx-large;}
+.x-large {font-size: x-large;}
+.large {font-size: large;}
+.small {font-size: small;}
+.x-small {font-size: x-small;}
+.bold {font-weight: bold;}
+.blue {color: #ff4848}
+.blue { float: left;}
+
+.article {
+border-bottom: 1px solid #000000;
+margin-top: 2px;
+margin-bottom: 2px;
+}
+
+.category {
+border-style: solid;
+border-width: 1px;
+border-color: #000000;
+color:#000000;
+font-weight:bold;
+font-size: large;
+color: #ffffff;
+background-color: #000000;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+.num {
+font-size: small;
+font-weight:bold;
+color:#ff4848;
+background-color:#ffcbcb;
+}
+
+.date{
+text-align: center;
+}
+
+#ad{
+	position: fixed;
+	z-index: 2000;
+	width: 120;
+	bottom: 30px;
+	left: 10px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+	background-color:#eeeeee;
+	text-align: center;
+	font-size: small;
+}
+#ad_close { width: 120px; height: 20px; font-size: 12px;} 
+
+.panel{
+	width: 100%;
+	min-height: 100%;
+	position: absolute;
+	margin-left: -150%;
+	z-index:2;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition:    all .5s ease-in-out;
+	-o-transition:      all .5s ease-in-out;
+	-ms-transition:     all .5s ease-in-out;
+	transition:         all .5s ease-in-out;
+}
+.panel:target{
+	margin-left: 0%;
+	background-color: #ffffff;
+}
+
+.shadow{
+-moz-box-shadow: 0px 0px 10px #000000;
+-webkit-box-shadow: 0px 0px 10px #000000;
+box-shadow: 0px 0px 10px #000000;
+/*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+}
